@@ -1,0 +1,18 @@
+{
+  "name": "phaser-pack-loader",
+  "description": "Webpack loader for Phaser asset packs",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Zdeněk Novák",
+  "license": "MIT",
+  "scripts": {
+      "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "loader-utils": "^1.1.0"
+  }
+}
