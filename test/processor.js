@@ -80,6 +80,22 @@ describe('Processor', function(){
         audioSpriteMarker.calledWith(sprite).should.be.true;
     });
 
+    it('should process bitmap font asset with atlas URL marker', function(){
+        var font = {
+            "type": "bitmapFont",
+            "textureURL": "symbols.png",
+            "atlasURL": "symbols.json"
+        };
+
+        var atlasMarker = sinon.spy();
+        var marker = new UrlMarker();
+        marker.markAtlas = atlasMarker;
+        var processor = new Processor(marker);
+        processor.processAsset(font);
+
+        atlasMarker.calledWith(font).should.be.true;
+    });
+
     it('should process atlasJSONArray asset with atlas URL marker', function(){
         var atlas = {
             "type": "atlasJSONArray",

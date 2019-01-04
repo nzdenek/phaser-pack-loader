@@ -32,6 +32,7 @@ Processor.prototype.processAsset = function(asset)
         case 'audiosprite':
             return this.marker.markAudioSprite(asset);
             break;
+        case 'bitmapFont':
         case 'atlasJSONArray':
         case 'atlasJSONHash':
         case 'atlasXML':
