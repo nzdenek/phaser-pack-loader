@@ -5,6 +5,15 @@
   "main": "index.js",
   "author": "Zdeněk Novák",
   "license": "MIT",
+  "repository": {
+      "type" : "git",
+      "url": "https://github.com/nzdenek/phaser-pack-loader.git"
+  },
+  "keywords": [
+      "webpack",
+      "loader",
+      "phaser"
+  ],
   "scripts": {
     "test": "mocha"
   },
